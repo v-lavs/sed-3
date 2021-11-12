@@ -1,0 +1,824 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!--зaкрыть индексацию -->
+    <meta name="googlebot" content="noindex, nofollow">
+    <meta name="robots" content="noindex">
+    <meta name="yandex" content="none">
+
+    <title>sendReady Главная</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="dist/main.css">
+    <link rel="stylesheet" href="dist/main2.css">
+</head>
+<body class="home">
+<div class="overlay"></div>
+<div class="wrapper">
+    <header class="header">
+    <div class="container">
+        <div class="header__inner">
+            <nav class="header__nav">
+                <button class="btn-close" id="btnClose" aria-label="Закрити"></button>
+
+                <ul class="menu menu_left menu_left-desk">
+                    <li class="menu__item dropdown">
+                        <a href="projects.html" class="menu__link">Проекти</a>
+                        <button class="sub-menu__toggle"></button>
+                        <ul class="sub-menu">
+                            <li class="sub-menu__item">
+                                <a href="projects.html" class="sub-menu__link">266 smart</a>
+                                <ul class="sub-menu-2">
+                                    <li class="sub-menu-2__item">
+                                        <a href="projects.html" class="sub-menu-2__link">Планування</a>
+                                    </li>
+                                    <li class="sub-menu-2__item">
+                                        <a href="projects.html" class="sub-menu-2__link">Галерея</a>
+                                    </li>
+                                    <li class="sub-menu-2__item">
+                                        <a href="projects.html" class="sub-menu-2__link">Хід будівництва</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#about" class="menu__link">Про компанію</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#investments" class="menu__link">Інвестиції</a>
+                    </li>
+                </ul>
+
+                <div class="menu_left-mob">
+
+                    <ul class="menu">
+                        <li class="menu__item ">
+                            <a href="projects.html" class="menu__link" id="openSubMenu">Проекти</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#about" class="menu__link">Про компанію</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#investments" class="menu__link">Інвестиції</a>
+                        </li>
+                    </ul>
+                    <div class="sub-menu_mob">
+                        <button class="btn-close" id="triggerClose" aria-label="Закрити"></button>
+                        <div class="swiper-container slider-menu" id="sliderMenu">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide slider-menu__slide">
+                                    <div class="slider-menu__link">
+                                        <a href="projects.html">266 smart</a>
+                                    </div>
+                                    <ul class="sub-menu">
+                                        <li class="sub-menu__item">
+                                            <a href="#" class="sub-menu__link">Планування</a>
+                                        </li>
+                                        <li class="sub-menu__item">
+                                            <a href="#" class="sub-menu__link">Галерея</a>
+                                        </li>
+                                        <li class="sub-menu__item">
+                                            <a href="#" class="sub-menu__link">Хід будівництва</a>
+                                        </li>
+                                        <li class="sub-menu__item">
+                                            <a href="#" class="sub-menu__link">Про проект</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="swiper-slide slider-menu__slide disable">
+                                    <div class="slider-menu__link">
+                                        <a href="projects.html">111 ZELENA</a>
+                                    </div>
+                                    <ul class="sub-menu">
+                                        <li class="sub-menu__item">
+                                            <a href="#" class="sub-menu__link">Планування</a>
+                                        </li>
+                                        <li class="sub-menu__item">
+                                            <a href="#" class="sub-menu__link">Галерея</a>
+                                        </li>
+                                        <li class="sub-menu__item">
+                                            <a href="#" class="sub-menu__link">Хід будівництва</a>
+                                        </li>
+                                        <li class="sub-menu__item">
+                                            <a href="#" class="sub-menu__link">Про проект</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="swiper-slide slider-menu__slide disable">
+                                    <div class="slider-menu__link">
+                                        <a href="projects.html">4 Pidstrigacha</a>
+                                    </div>
+                                    <ul class="sub-menu">
+                                        <li class="sub-menu__item">
+                                            <a href="#" class="sub-menu__link">Планування</a>
+                                        </li>
+                                        <li class="sub-menu__item">
+                                            <a href="#" class="sub-menu__link">Галерея</a>
+                                        </li>
+                                        <li class="sub-menu__item">
+                                            <a href="#" class="sub-menu__link">Хід будівництва</a>
+                                        </li>
+                                        <li class="sub-menu__item">
+                                            <a href="#" class="sub-menu__link">Про проект</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                        <div class="lang-switch">
+                            <ul class="lang-switch__list">
+                                <li class="lang-switch__item"><a href="#" class="lang-switch__link active">ua</a>
+                                </li>
+                                <li class="lang-switch__item"><a href="#" class="lang-switch__link">en</a></li>
+                                <li class="lang-switch__item"><a href="#" class="lang-switch__link">pl</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <ul class="menu menu_right">
+                    <li class="menu__item">
+                        <a href="#" class="menu__link">Партнери</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#contacts" class="menu__link">Контакти</a>
+                    </li>
+                    <li class="menu__item ">
+                        <div class="lang-switch">
+                            <ul class="lang-switch__list">
+                                <li class="lang-switch__item"><a href="#" class="lang-switch__link active">ua</a>
+                                </li>
+                                <li class="lang-switch__item"><a href="#" class="lang-switch__link">en</a></li>
+                                <li class="lang-switch__item"><a href="#" class="lang-switch__link">pl</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+
+            <a href="index.html" class="header__logo">
+                <img src="assets/img/svg/logo-site.svg" alt="Smart Estate" class="img">
+            </a>
+
+            <button type="button" class="btn-burger" aria-label="бургер-меню">
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+            </button>
+            <div class="lang-switch_mob">
+                <a href="#" class="lang-switch__link active">ua</a>
+            </div>
+        </div>
+    </div>
+    <div class="backdrop"></div>
+</header>
+
+    <main class="main home">
+        <section class="section-intro">
+            <div class="section-intro__inner">
+                <div class="blend-strip" id="blendStrip"></div>
+
+                <div class="swiper-container banner">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <picture>
+                                <source srcset="assets/img/slide1-mob.jpg" media="(max-width: 480px)">
+                                <img src="assets/img/slide1.jpg" alt="" class="banner__img">
+                            </picture>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="banner__inner" style="background-image: url(assets/img/slide1.jpg);">
+                                <picture>
+                                    <source srcset="assets/img/slide1-mob.jpg" media="(max-width: 480px)">
+                                    <img src="assets/img/slide1.jpg" alt="" class="banner__img">
+                                </picture>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container">
+                    <div class="section-intro__content">
+                        <div class="section-intro__part section-intro__part_left">
+                            <h1 class="section-intro__title">
+                                <span> Комфортний <br> Smart простір </span>
+                            </h1>
+                            <div class="block-btn">
+                                <button class="btn btn_main btn_big btn_gold">Підібрати Інвестицію</button>
+                                <button class="btn btn_main btn_big btn_glass-dark btn_glass-dark_from-icon popup-trigger-consultation">
+                                    Консультація
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="section-intro__part section-intro__part_right">
+                            <a href="#" class="logo-big">
+                                <picture>
+                                    <source srcset="assets/img/svg/logo-big-dark.svg" media="(max-width: 480px)">
+                                    <img src="assets/img/svg/logo-big.svg" width="327" height="327" alt="" class="img">
+                                </picture>
+
+                            </a>
+                            <div class="social-bar">
+                                <a href="#" class="social__link"><span class="hide">Youtube</span>
+                                    <svg class="icon-svg" width="20" height="14" viewBox="0 0 20 14" fill="none"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M19.2204 1.20181C18.4985 0.348194 17.1656 0 14.6201 0H5.37975C2.77594 0 1.42045 0.370654 0.701226 1.27944C0 2.16552 0 3.47109 0 5.27802V8.72204C0 12.2226 0.832 14 5.37975 14H14.6201C16.8276 14 18.0508 13.6928 18.8422 12.9395C19.6538 12.1669 20 10.9057 20 8.72204V5.27802C20 3.37246 19.9458 2.0592 19.2204 1.20181ZM12.8401 7.47551L8.64406 9.65675C8.55026 9.70553 8.44767 9.72972 8.34522 9.72972C8.22922 9.72972 8.11348 9.69866 8.01097 9.63692C7.81794 9.52059 7.70006 9.31248 7.70006 9.088V4.7395C7.70006 4.51541 7.81761 4.3075 8.01026 4.19109C8.20297 4.07469 8.44264 4.06673 8.64258 4.17004L12.8386 6.33723C13.0521 6.44749 13.1861 6.6667 13.1864 6.90586C13.1867 7.14523 13.0533 7.36475 12.8401 7.47551Z"
+                                              fill="white"/>
+                                    </svg>
+                                </a>
+                                <a href="#" class="social__link"><span class="hide">instagram</span>
+                                    <svg class="icon-svg" width="15" height="15" viewBox="0 0 15 15" fill="none"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0)">
+                                            <path d="M7.5 4.45312C5.80371 4.45312 4.42383 5.83301 4.42383 7.5293C4.42383 9.22559 5.80371 10.6055 7.5 10.6055C9.19629 10.6055 10.5762 9.22559 10.5762 7.5293C10.5762 5.83301 9.19629 4.45312 7.5 4.45312ZM7.5 4.45312C5.80371 4.45312 4.42383 5.83301 4.42383 7.5293C4.42383 9.22559 5.80371 10.6055 7.5 10.6055C9.19629 10.6055 10.5762 9.22559 10.5762 7.5293C10.5762 5.83301 9.19629 4.45312 7.5 4.45312ZM12.8027 -1.11925e-06L2.19727 -1.92091e-07C0.984375 -8.60568e-08 8.60568e-08 0.984375 1.92091e-07 2.19727L1.11925e-06 12.8027C1.22528e-06 14.0156 0.984376 15 2.19727 15L12.8027 15C14.0156 15 15 14.0156 15 12.8027L15 2.19726C15 0.984374 14.0156 -1.22528e-06 12.8027 -1.11925e-06ZM7.5 11.4844C5.32034 11.4844 3.54492 9.70896 3.54492 7.5293C3.54492 5.34958 5.32034 3.57422 7.5 3.57422C9.67966 3.57422 11.4551 5.34958 11.4551 7.5293C11.4551 9.70895 9.67966 11.4844 7.5 11.4844ZM12.334 3.57422C11.8506 3.57422 11.4551 3.17871 11.4551 2.69531C11.4551 2.21191 11.8506 1.81641 12.334 1.81641C12.8174 1.81641 13.2129 2.21191 13.2129 2.69531C13.2129 3.17871 12.8174 3.57422 12.334 3.57422ZM7.5 4.45312C5.80371 4.45312 4.42383 5.83301 4.42383 7.5293C4.42383 9.22559 5.80371 10.6055 7.5 10.6055C9.19629 10.6055 10.5762 9.22559 10.5762 7.5293C10.5762 5.83301 9.19629 4.45312 7.5 4.45312ZM7.5 4.45312C5.80371 4.45312 4.42383 5.83301 4.42383 7.5293C4.42383 9.22559 5.80371 10.6055 7.5 10.6055C9.19629 10.6055 10.5762 9.22559 10.5762 7.5293C10.5762 5.83301 9.19629 4.45312 7.5 4.45312ZM7.5 4.45312C5.80371 4.45312 4.42383 5.83301 4.42383 7.5293C4.42383 9.22559 5.80371 10.6055 7.5 10.6055C9.19629 10.6055 10.5762 9.22559 10.5762 7.5293C10.5762 5.83301 9.19629 4.45312 7.5 4.45312Z"
+                                                  fill="white"/>
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0">
+                                                <rect width="15" height="15" fill="white"/>
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                </a>
+                                <a href="#" class="social__link"><span class="hide">Facebook</span>
+                                    <svg class="icon-svg" width="15" height="15" viewBox="0 0 15 15" fill="none"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M13.125 0H1.875C0.840937 0 0 0.840937 0 1.875V13.125C0 14.1591 0.840937 15 1.875 15H7.5V9.84375H5.625V7.5H7.5V5.625C7.5 4.07156 8.75906 2.8125 10.3125 2.8125H12.1875V5.15625H11.25C10.7325 5.15625 10.3125 5.1075 10.3125 5.625V7.5H12.6562L11.7188 9.84375H10.3125V15H13.125C14.1591 15 15 14.1591 15 13.125V1.875C15 0.840937 14.1591 0 13.125 0Z"
+                                              fill="white"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="swiper-pagination" id="mainBannerPagination"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="find-estate">
+            <div class="container">
+                <h2 class="find-estate__title">
+                    <img src="assets/img/svg/search.svg" alt="" class="find-estate__img">
+                    Підберіть нерухомість</h2>
+                <form action="#" class="form-choose" method="post">
+
+                    <div class="wrap-select">
+                        <select name="name" class="custom-select form-control">
+                            <option data-display="Назва об’єктів" hidden>Назва об’єктів</option>
+                            <option value="1">266 Smart</option>
+                            <option value="1">111 Zelena</option>
+                            <option value="2">13 Pidstrigacha</option>
+                        </select>
+                    </div>
+
+                    <div class="wrap-select">
+                        <select name="location" class="custom-select form-control">
+                            <option data-display="Локація" value="none" hidden="">Локація</option>
+                            <option value="Lviv">Львів</option>
+                        </select>
+                    </div>
+
+                    <div class="wrap-select">
+                        <select name="status" class="custom-select form-control">
+                            <option data-display="Cтатус" value="none" hidden="">Cтатус</option>
+                            <option value="1">Продаж розпочатий</option>
+                            <option value="2">Продаж не розпочатий</option>
+                        </select>
+                    </div>
+
+                    <div class="wrap-select">
+                        <select name="type-investment" class="custom-select form-control">
+                            <option data-display="Тип інвестиції" value="none" hidden="">Тип інвестиції</option>
+                            <option value="1">Житло</option>
+                            <option value="2">Комерцїя</option>
+                            <option value="3">Офіс</option>
+                        </select>
+                    </div>
+
+                    <button class="btn btn_choose">Пошук</button>
+                </form>
+
+                <div class="search-table">
+                    <div class="search-table__thead">
+                        <div class="search-table__row">
+                            <div class="search-table__cell">Назва об'єкту</div>
+                            <div class="search-table__cell">Місто</div>
+                            <div class="search-table__cell">Поверх</div>
+                            <div class="search-table__cell">Площа</div>
+                            <div class="search-table__cell">Статус</div>
+                            <div class="search-table__cell">№</div>
+                            <div class="search-table__cell search-table__cell_placeholder"></div>
+                        </div>
+                    </div>
+
+                    <div class="search-table__tbody">
+                        <div class="search-table__row">
+                            <div class="search-table__cell">
+                                <div class="search-table__mob-title">Назва об'єкту</div>
+                                <div class="search-table__content">SMART 266</div>
+                            </div>
+                            <div class="search-table__cell">
+                                <div class="search-table__mob-title">Місто</div>
+                                <div class="search-table__content">Львів</div>
+                            </div>
+                            <div class="search-table__cell">
+                                <div class="search-table__mob-title">Поверх</div>
+                                <div class="search-table__content">1</div>
+                            </div>
+                            <div class="search-table__cell">
+                                <div class="search-table__mob-title">Площа</div>
+                                <div class="search-table__content">15.33 м<sup>2</sup></div>
+                            </div>
+                            <div class="search-table__cell">
+                                <div class="search-table__mob-title">Статус</div>
+                                <div class="search-table__content">Завершений</div>
+                            </div>
+                            <div class="search-table__cell">
+                                <div class="search-table__mob-title">№</div>
+                                <div class="search-table__content">k-4-10</div>
+                            </div>
+                            <div class="search-table__cell search-table__cell_placeholder"></div>
+                        </div>
+                        <div class="search-table__row">
+                            <div class="search-table__cell">
+                                <div class="search-table__mob-title">Назва об'єкту</div>
+                                <div class="search-table__content">SMART 266</div>
+                            </div>
+                            <div class="search-table__cell">
+                                <div class="search-table__mob-title">Місто</div>
+                                <div class="search-table__content">Львів</div>
+                            </div>
+                            <div class="search-table__cell">
+                                <div class="search-table__mob-title">Поверх</div>
+                                <div class="search-table__content">1</div>
+                            </div>
+                            <div class="search-table__cell">
+                                <div class="search-table__mob-title">Площа</div>
+                                <div class="search-table__content">74.33 м<sup>2</sup></div>
+                            </div>
+                            <div class="search-table__cell">
+                                <div class="search-table__mob-title">Статус</div>
+                                <div class="search-table__content">Завершений</div>
+                            </div>
+                            <div class="search-table__cell">
+                                <div class="search-table__mob-title">№</div>
+                                <div class="search-table__content">k-4-11</div>
+                            </div>
+                            <div class="search-table__cell search-table__cell_placeholder"></div>
+                        </div>
+                        <div class="search-table__row">
+                            <div class="search-table__cell">
+                                <div class="search-table__mob-title">Назва об'єкту</div>
+                                <div class="search-table__content">SMART 266</div>
+                            </div>
+                            <div class="search-table__cell">
+                                <div class="search-table__mob-title">Місто</div>
+                                <div class="search-table__content">Львів</div>
+                            </div>
+                            <div class="search-table__cell">
+                                <div class="search-table__mob-title">Поверх</div>
+                                <div class="search-table__content">1</div>
+                            </div>
+                            <div class="search-table__cell">
+                                <div class="search-table__mob-title">Площа</div>
+                                <div class="search-table__content">47.33 м<sup>2</sup></div>
+                            </div>
+                            <div class="search-table__cell">
+                                <div class="search-table__mob-title">Статус</div>
+                                <div class="search-table__content">Завершений</div>
+                            </div>
+                            <div class="search-table__cell">
+                                <div class="search-table__mob-title">№</div>
+                                <div class="search-table__content">k-4-12</div>
+                            </div>
+                            <div class="search-table__cell search-table__cell_placeholder"></div>
+                        </div>
+                        <div class="search-table__row">
+                            <div class="search-table__cell">
+                                <div class="search-table__mob-title">Назва об'єкту</div>
+                                <div class="search-table__content">SMART 266</div>
+                            </div>
+                            <div class="search-table__cell">
+                                <div class="search-table__mob-title">Місто</div>
+                                <div class="search-table__content">Львів</div>
+                            </div>
+                            <div class="search-table__cell">
+                                <div class="search-table__mob-title">Поверх</div>
+                                <div class="search-table__content">1</div>
+                            </div>
+                            <div class="search-table__cell">
+                                <div class="search-table__mob-title">Площа</div>
+                                <div class="search-table__content">81.33 м<sup>2</sup></div>
+                            </div>
+                            <div class="search-table__cell">
+                                <div class="search-table__mob-title">Статус</div>
+                                <div class="search-table__content">Завершений</div>
+                            </div>
+                            <div class="search-table__cell">
+                                <div class="search-table__mob-title">№</div>
+                                <div class="search-table__content">k-4-13</div>
+                            </div>
+                            <div class="search-table__cell search-table__cell_placeholder"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="investments" class="section-investments section_anim">
+            <div class="container d-flex">
+                <div class="part part_content">
+                    <header class="section__header">
+
+                        <span class="section__title-bg heading_anim heading_anim_dark">
+                            <span class="inner_text">investments</span>
+                        </span>
+
+                        <h2 class="section__title">Інвестиції</h2>
+                    </header>
+
+
+                    <div class="part part_media">
+                        <div class="block-animation">
+                            <div class="wrap-img">
+                                <img src="assets/img/bootle.gif" alt="" class="img">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="profit">
+                        <span class="percent">20%</span>
+                        <span class="img-wrap"><img src="assets/img/investm-logo.png" alt="" class="img"></span>
+                        <span>SMART Фінанс вигода<br> Корпоративний інвестиційний фонд  </span>
+                    </div>
+                    <div class="article">
+                        <div class="article-heading">
+                            <h3 class="article-heading__item">Цілі SDI</h3>
+                            <div class="article-heading__item">
+                                <img src="assets/img/investm-logo.png" alt="" class="img">
+                            </div>
+                        </div>
+                        <p>
+                            Залучення коштів багатьох індивідуальних інвесторів, шляхом емісії та продажу своїх
+                            акцій та
+                            подальшого професійного інвестування таких об’єднаних ресурсів у різні проекти з метою
+                            отримання і розподілу прибутку між інвесторами
+                        </p>
+
+                    </div>
+                    <div class="description">
+                        <p>
+                            SDI - Smart Development Investments. Корпоративні інвестиційні фонди під конкретні
+                            проекти,
+                            що залучають кошти індивідуальних інвесторів
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <ul class="goal-fond">
+                    <li class="goal-fond__item">
+                        <div class="goal-fond__top-content">20%</div>
+                        <div class="goal-fond__text">
+                            Прибутковість капіталу інвестора в рік
+                        </div>
+                    </li>
+                    <li class="goal-fond__item">
+                        <div class="goal-fond__top-content">6 років</div>
+                        <div class="goal-fond__text">
+                            Подвоєння капіталу
+                        </div>
+                    </li>
+                    <li class="goal-fond__item">
+                        <div class="goal-fond__top-content">3 роки</div>
+                        <div class="goal-fond__text">
+                            Середня тривалість проекту
+                        </div>
+                    </li>
+                    <li class="goal-fond__item">
+                        <div class="goal-fond__top-content">10к</div>
+                        <div class="goal-fond__text">
+                            Мінімальна сума інвестиції
+                        </div>
+                    </li>
+                    <li class="goal-fond__item">
+                        <div class="goal-fond__top-content">100%</div>
+                        <div class="goal-fond__text">
+                            Прозора юридична форма
+                        </div>
+                    </li>
+                </ul>
+                <div class="reasons-investing d-flex slide-in-left">
+                    <div class="part part_left">
+                        <div class="reasons-investing__icon-wrap"
+                             style="background-image: url(assets/img/svg/icon-aside.svg);"></div>
+                        <div class="text_lg">Чому варто інвестувати у нерухомість?</div>
+                    </div>
+                    <div class="part part_right">
+                        <ul class="reasons-investing__list">
+                            <li class="reasons-investing__item">Довгострокові переваги</li>
+                            <li class="reasons-investing__item">Досвід</li>
+                            <li class="reasons-investing__item">Ефективні рішення</li>
+                            <li class="reasons-investing__item">Прозорість</li>
+                            <li class="reasons-investing__item">Найефективніший спосіб отримання стабільного
+                                доходу
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="text">
+                        <p>Робота на перспективу за нашим переконанням є добрим підґрунтям створення унікального
+                            середовища
+                            для реалізації цікавих проектів і примноження капіталів
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="public-location section_anim">
+            <div class="container  d-flex">
+                <div class="part part_left ">
+                    <div id="scrollingArea" class="wrap-map">
+                        <div id="img_map" class="img_map"></div>
+                    </div>
+                </div>
+                <div class="part part_right">
+                    <div class="public-spaces__list">
+                        <div class="preview clearfix">
+                            <div class="wrap-img">
+                                <img src="assets/img/img1.jpg" alt="" class="img">
+                            </div>
+                            <h3 class="title">266</br> Smart </h3>
+                            <p>
+                                Сучасні громадські простори
+                                для відпочинку, забезпеченість
+                                паркомісцями, smart система
+                                упрапвління будинком,
+                                відкриті і доступні
+                                інструменти фінансування.
+                            </p>
+                        </div>
+                        <ul class="list-places">
+                            <li class="list-places__item">
+                                <a href="#" class="list-places__link"><span class="icon city-mall"
+                                                                            style="background-image: url(assets/img/svg/shopping.svg);"></span>Торговий<br>
+                                    центр</a>
+                            </li>
+                            <li class="list-places__item">
+                                <a href="#" class="list-places__link"><span class="icon"
+                                                                            style="background-image: url(assets/img/svg/school.svg);"></span>Школа</a>
+                            </li>
+                            <li class="list-places__item">
+                                <a href="#" class="list-places__link"><span class="icon"
+                                                                            style="background-image: url(assets/img/svg/park.svg);"></span>Парк</a>
+                            </li>
+                            <li class="list-places__item">
+                                <a href="#" class="list-places__link"><span class="icon"
+                                                                            style="background-image: url(assets/img/svg/station.svg);"></span>Возкал</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-projects section_anim bg_dark">
+            <header class="section__header">
+
+                <span class="section__title-bg-center heading_anim heading_anim_white">
+                    <span class="inner_text">PROJECT</span>
+                </span>
+
+                <h2 class="section__title">Проекти</h2>
+            </header>
+            <div class="container">
+                <div class="filter">
+                    <div class="filter__top-bar">
+                        <button type="button" class="btn btn_main btn_gold btn_uppercase">В ПРОЦЕСІ</button>
+                        <button type="button" class="btn btn_main btn_glass-dark btn_uppercase" disabled>РЕАЛІЗОВАНІ
+                        </button>
+                    </div>
+                </div>
+                <div class="card-list card-list_duo">
+                    <div class="card-list__item">
+                        <a href="single.html" class="card">
+                            <div class="card__inner"
+                                 style="background-image: url(assets/img/offiсe2.jpg);">
+                                <header class="card__header">
+                                    <h3 class="card__title">Smart 266</h3>
+                                    <div class="card__sub-title">Стрийська 266</div>
+                                </header>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card-list__item">
+                        <a href="single.html" class="card">
+                            <div class="card__inner"
+                                 style="background-image: url(assets/img/preview.jpg);">
+                                <header class="card__header">
+                                    <h3 class="card__title">Zelena 13</h3>
+                                    <div class="card__sub-title">Зелена 13</div>
+                                </header>
+
+                                <footer class="card__footer">
+                                    Coming soon...
+                                </footer>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="about" class="section-about section_anim ">
+            <div class="container d-flex">
+                <div class="part part_content">
+                    <header class="section__header">
+                        <span class="section__title-bg heading_anim heading_anim_dark"><span
+                                class="inner_text"> ABOUT</span></span>
+                        <h2 class="section__title">Про компанію</h2>
+                    </header>
+                    <div class="partners">
+                        <a href="#" class="partners__link"><img src="assets/img/svg/novelex.svg" alt="" class="img"></a>
+                        <a href="#" class="partners__link"><img src="assets/img/svg/altum.svg" alt="" class="img"></a>
+                        <a href="#" class="partners__link"><img src="assets/img/svg/hryzlyuk.svg" alt=""
+                                                                class="img"></a>
+                    </div>
+                    <div class="text text-hide">
+                        <p>Smart Estate Development - європейський забудовник, з 5-ти річною історією
+                            будівництва в Європі. Сьогодні це 14 багатоквартирних будинків у
+                            Польщі та 4 реалізованих ЖК у Львові.
+                        </p>
+
+                        <div class="part part_media">
+                            <div class="block-animation">
+                                <div class="wrap-img"><img src="assets/img/build1.gif" alt="" class="img"></div>
+                            </div>
+                        </div>
+
+                        <p>Smart Estate - концепція комфорту в деталях: планування європейського
+                            менталітету за типом або по принципу. Сучасні громадські простори для
+                            відпочинку, забезпеченість паркомісцями, smart система упрпвління
+                            будинком, відкриті і доступні інструменти фінансування.
+                        </p>
+
+                        <div class="mob-hide">
+                            <p> Місія - Інтегрувати та реалізувати Європейське середовище у місті Лева.
+                                Простота та якість деталей в комфортному середовищі.
+                            </p>
+                        </div>
+                    </div>
+                    <a class="btn btn_gold btn_sm btn_read-more " href="#">Читати далі</a>
+                </div>
+            </div>
+            <aside class="aside">
+                <div class="container">
+                    <div class="marquee">
+                        <img src="assets/img/marquee.svg" alt="">
+                    </div>
+                </div>
+            </aside>
+        </section>
+
+        <section class="section-advantages section_anim bg_dark">
+            <div class="container">
+
+                <div class="section-advantages__header">
+                    <a href="#" class="big-logo">
+                        <img src="assets/img/svg/logo-big2.svg" width="303" height="303" alt="" class="img">
+                    </a>
+                    <div class="section-advantages__content">
+                        <h2 class="heading_anim heading_anim_dark">
+                            <span class="">smart</span><br>
+                            <span class="white">property </span>
+                        </h2>
+                    </div>
+                </div>
+
+                <div class="swiper-container" id="sliderAdvantages">
+                    <div class="swiper-wrapper advantages">
+                        <div class="advantages__item swiper-slide">
+                            <div class="advantages-card">
+                                <div class="advantages-card__wrap-img" id="advantages1"></div>
+                                <h4 class="advantages-card__title">Управлінська компанія у смартфоні</h4>
+                            </div>
+                        </div>
+                        <div class="advantages__item swiper-slide">
+                            <div class="advantages-card">
+                                <div class="advantages-card__wrap-img" id="advantages2"></div>
+                                <h4 class="advantages-card__title">Smart системи управління нерухомістю</h4>
+                            </div>
+                        </div>
+                        <div class="advantages__item swiper-slide">
+                            <div class="advantages-card">
+                                <div class="advantages-card__wrap-img" id="advantages3"></div>
+                                <h4 class="advantages-card__title">Smart паркомісце, котре здається в оренду</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__logo-wrap">
+            <a href="#" class="footer__logo">
+                <img src="assets/img/svg/logo-site.svg" alt="" class="img">
+            </a>
+        </div>
+        <div id="contacts" class="footer__contacts">
+            <div class="footer__contacts-item">
+                <div class="wrap-item address">
+                    <h5 class="title">Відділи продажу </h5>
+                    <span>м.Львів, вул. Федьковича, 34б</span>
+                </div>
+                <div class="wrap-item tel mob-order">
+                    <a href="tel: +38 (067) 77 90 707" class="tel-text text_md"> +38 (067) 77 90 707</a>
+                    <a class="email" href="mailto: sales@smartestate.eu"> sales@smartestate.eu</a>
+                </div>
+                <div class="wrap-item work">
+                    <h5 class="title">Графік роботи</h5>
+                    <div>
+                        <div class="work-row"> Пн - Пт: 10:00-18:00<br> Сб - Нд: Вихідний</div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__contacts-item">
+                <div class="wrap-item address">
+                    <h5 class="title">Офіс / Відділ постачання</h5>
+                    <span>м.Львів, вул. Федьковича, 34б</span>
+                </div>
+                <div class="wrap-item tel mob-order">
+                    <a href="tel: +38 (067) 63 81 115" class="tel-text text_md"> +38 (067) 63 81 115</a>
+                    <a class="email" href="mailto: office@smartestate.eu">office@smartestate.eu</a>
+                </div>
+                <div class="wrap-item work">
+                    <h5 class="title">Графік роботи</h5>
+                    <div>
+                        <div class="work-row"> Пн - Пт: 10:00-18:00<br> Сб - Нд: Вихідний</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer__item social-bar">
+            <a href="#" class="social__link"><span class="hide">Instagram</span>
+                <img class="icon" src="assets/img/svg/insta.svg" alt="">
+            </a>
+            <a href="#" class="social__link"><span class="hide">Youtube</span>
+                <img class="icon" src="assets/img/svg/youtybe.svg" alt="">
+            </a>
+
+            <a href="#" class="social__link"><span class="hide">Facebook</span>
+                <img class="icon" src="assets/img/svg/fb.svg" alt="">
+            </a>
+        </div>
+    </footer>
+</div>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="dist/main.js"></script>
+<script src="dist/main2.js"></script>
+
+<div class="modal" tabindex="-1" id="popupConsultation">
+    <div class="modal__dialog">
+        <div class="modal__content">
+            <div class="modal__header">
+                <button type="button" id="closePopup" class="btn btn_close" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+            </div>
+            <div class="modal__body">
+                <form action="#" class="form">
+                    <div class="form__group">
+                        <label class="label hide">Ім’я</label>
+                        <input type="text" class="input" placeholder="Ім’я">
+                    </div>
+                    <div class="form__group">
+                        <label class="label hide">Телефон</label>
+                        <input type="text" class="input" placeholder="Телефон">
+                    </div>
+                    <div class="form__group">
+                        <label class="label hide">Коментар</label>
+                        <textarea class="textarea" rows="1" cols="25" name="text" placeholder="Коментар"></textarea>
+                    </div>
+                    <div class="form__footer">
+                        <button type="submit" class="btn btn_main btn_gold btn_submit">Надіслати</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

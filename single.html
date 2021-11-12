@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!--зaкрыть индексацию -->
+    <meta name="googlebot" content="noindex, nofollow">
+    <meta name="robots" content="noindex">
+    <meta name="yandex" content="none">
+
+    <title>sendReady Single</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="dist/main.css">
+    <link rel="stylesheet" href="dist/main2.css">
+</head>
+<body>
+<div class="overlay"></div>
+<div class="wrapper">
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <nav class="header__nav">
+                    <button class="btn-close" id="btnClose" aria-label="Закрити"></button>
+
+                    <ul class="menu menu_left menu_left-desk">
+                        <li class="menu__item dropdown">
+                            <a href="projects.html" class="menu__link">Проекти</a>
+                            <button class="sub-menu__toggle"></button>
+                            <ul class="sub-menu">
+                                <li class="sub-menu__item">
+                                    <a href="projects.html" class="sub-menu__link">266 smart</a>
+                                    <ul class="sub-menu-2">
+                                        <li class="sub-menu-2__item">
+                                            <a href="projects.html" class="sub-menu-2__link">Планування</a>
+                                        </li>
+                                        <li class="sub-menu-2__item">
+                                            <a href="projects.html" class="sub-menu-2__link">Галерея</a>
+                                        </li>
+                                        <li class="sub-menu-2__item">
+                                            <a href="projects.html" class="sub-menu-2__link">Хід будівництва</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="menu__item">
+                            <a href="index.html#about" class="menu__link">Про компанію</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="index.html#investments" class="menu__link">Інвестиції</a>
+                        </li>
+                    </ul>
+
+                    <div class="menu_left-mob">
+
+                        <ul class="menu">
+                            <li class="menu__item ">
+                                <a href="projects.html" class="menu__link" id="openSubMenu">Проекти</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="index.html#about" class="menu__link">Про компанію</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="index.html#investments" class="menu__link">Інвестиції</a>
+                            </li>
+                        </ul>
+                        <div class="sub-menu_mob">
+                            <button class="btn-close" id="triggerClose" aria-label="Закрити"></button>
+                            <div class="swiper-container slider-menu" id="sliderMenu">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide slider-menu__slide">
+                                        <div class="slider-menu__link">
+                                            <a href="projects.html">266 smart</a>
+                                        </div>
+                                        <ul class="sub-menu">
+                                            <li class="sub-menu__item">
+                                                <a href="#" class="sub-menu__link">Планування</a>
+                                            </li>
+                                            <li class="sub-menu__item">
+                                                <a href="#" class="sub-menu__link">Галерея</a>
+                                            </li>
+                                            <li class="sub-menu__item">
+                                                <a href="#" class="sub-menu__link">Хід будівництва</a>
+                                            </li>
+                                            <li class="sub-menu__item">
+                                                <a href="#" class="sub-menu__link">Про проект</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="swiper-slide slider-menu__slide disable">
+                                        <div class="slider-menu__link">
+                                            <a href="projects.html">111 ZELENA</a>
+                                        </div>
+                                        <ul class="sub-menu">
+                                            <li class="sub-menu__item">
+                                                <a href="#" class="sub-menu__link">Планування</a>
+                                            </li>
+                                            <li class="sub-menu__item">
+                                                <a href="#" class="sub-menu__link">Галерея</a>
+                                            </li>
+                                            <li class="sub-menu__item">
+                                                <a href="#" class="sub-menu__link">Хід будівництва</a>
+                                            </li>
+                                            <li class="sub-menu__item">
+                                                <a href="#" class="sub-menu__link">Про проект</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="swiper-slide slider-menu__slide disable">
+                                        <div class="slider-menu__link">
+                                            <a href="projects.html">4 Pidstrigacha</a>
+                                        </div>
+                                        <ul class="sub-menu">
+                                            <li class="sub-menu__item">
+                                                <a href="#" class="sub-menu__link">Планування</a>
+                                            </li>
+                                            <li class="sub-menu__item">
+                                                <a href="#" class="sub-menu__link">Галерея</a>
+                                            </li>
+                                            <li class="sub-menu__item">
+                                                <a href="#" class="sub-menu__link">Хід будівництва</a>
+                                            </li>
+                                            <li class="sub-menu__item">
+                                                <a href="#" class="sub-menu__link">Про проект</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="swiper-pagination"></div>
+                            </div>
+                            <div class="lang-switch">
+                                <ul class="lang-switch__list">
+                                    <li class="lang-switch__item"><a href="#" class="lang-switch__link active">ua</a>
+                                    </li>
+                                    <li class="lang-switch__item"><a href="#" class="lang-switch__link">en</a></li>
+                                    <li class="lang-switch__item"><a href="#" class="lang-switch__link">pl</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <ul class="menu menu_right">
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">Партнери</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#contacts" class="menu__link">Контакти</a>
+                        </li>
+                        <li class="menu__item ">
+                            <div class="lang-switch">
+                                <ul class="lang-switch__list">
+                                    <li class="lang-switch__item"><a href="#" class="lang-switch__link active">ua</a>
+                                    </li>
+                                    <li class="lang-switch__item"><a href="#" class="lang-switch__link">en</a></li>
+                                    <li class="lang-switch__item"><a href="#" class="lang-switch__link">pl</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+
+                <a href="index.html" class="header__logo">
+                    <img src="assets/img/svg/logo-site.svg" alt="Smart Estate" class="img">
+                </a>
+
+                <button type="button" class="btn-burger" aria-label="бургер-меню">
+                    <span class="line"></span>
+                    <span class="line"></span>
+                    <span class="line"></span>
+                </button>
+                <div class="lang-switch_mob">
+                    <a href="#" class="lang-switch__link active">ua</a>
+                </div>
+            </div>
+        </div>
+        <div class="backdrop"></div>
+    </header>
+
+    <main class="main page-single">
+
+        <section class="section-banner">
+            <div class="container d-flex">
+                <div class="section-banner__sidebar">
+                    <a href="#" class="section-banner__logo">
+                        <img src="assets/img/svg/logo-big-dark.svg" width="252" height="252" alt="" class="img">
+                    </a>
+
+                    <nav class="section-banner__nav">
+                        <a class="section-banner__nav-link" href="#">
+                            <img src="assets/img/svg/building-step.svg" class="section-banner__nav-icon" alt="">
+                            Хід будівництва
+                        </a>
+                        <a class="section-banner__nav-link" href="#">
+                            <img src="assets/img/svg/docs-icon.svg" class="section-banner__nav-icon" alt="">
+                            Документи
+                        </a>
+                        <a class="section-banner__nav-link" href="#">
+                            <img src="assets/img/svg/terms-icon.svg" class="section-banner__nav-icon" alt="">
+                            Розтермінування
+                        </a>
+                    </nav>
+                </div>
+
+                <div class="section-banner__banner">
+                    <picture>
+                        <source srcset="assets/img/single-banner-mob.jpg" media="(max-width: 480px)">
+                        <img src="assets/img/single-banner.jpg" alt="" class="section-banner__img">
+                    </picture>
+                    <a href="#" class="section-banner__logo_mob">
+                        <img src="assets/img/svg/logo-big-dark.svg" width="252" height="252" alt="" class="img">
+                    </a>
+                    <div class="section-banner__content">
+                        <div class="section-banner__info">
+                            <div class="name-object text_xl">SMART 266</div>
+                            <div class="building-area">24 000</div>
+                            <div class="sub-text">
+                                <div class="address text_md">вул. Стрийська 266</div>
+                                <div class="unit text_md">грн/м2</div>
+                            </div>
+                        </div>
+                        <footer class="section-banner__footer">
+                            <button class="btn btn_main btn_big btn_glass-dark btn_glass-dark_from-icon popup-trigger-consultation">
+                                Консультація
+                            </button>
+                            <button class="btn btn_main btn_big btn_gold">Підібрати Інвестицію</button>
+                        </footer>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <article class="section-article">
+            <div class="container">
+                <h2 class="section__title">Комфортний Smart простір</h2>
+                <div class="dynamic-content">
+                    <p>
+                        Торгово офісний центр Smart 266 — це місце, являє собою багатофункціональний робочий простір,
+                        у якому грамотно спланована кожна одиниця корисної площі й стиль оформлення. Створений для тих,
+                        для кого естетика — частина життя, і для тих, хто черпає натхнення від відчуття єднання з
+                        природою, але в той же час сучасні офіси – це високоякісні приміщення з новітніми інженерними
+                        системами
+                    </p>
+                </div>
+                <div class="swiper-container" id="particularityCards">
+                    <div class="swiper-wrapper particularity-list">
+                        <div class="swiper-slide particularity-list__item">
+                            <div class="particularity-list__icon">
+                                <img src="assets/img/svg/smart-house.svg" alt="">
+                            </div>
+                            <div class="particularity-list__content">
+                                <h3 class="particularity-list__title">Сучасний дизайн</h3>
+                                <div class="particularity-list__text">
+                                    <p>Сучасний дизайн фасаду та дизайнерське оформлення холів та поверхів</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide particularity-list__item">
+                            <div class="particularity-list__icon">
+                                <img src="assets/img/svg/comfort-icon.svg" alt="">
+                            </div>
+                            <div class="particularity-list__content">
+                                <h3 class="particularity-list__title">Комфорт</h3>
+                                <div class="particularity-list__text">
+                                    <p>Вільні планування з можливістю трансформації робочого простору, чиста висота
+                                        поверху 3,20 м
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide particularity-list__item">
+                            <div class="particularity-list__icon">
+                                <img src="assets/img/svg/solution-icon.svg" alt="">
+                            </div>
+                            <div class="particularity-list__content">
+                                <h3 class="particularity-list__title">Smart рішення</h3>
+                                <div class="particularity-list__text">
+                                    <p>Управління зі смартфону - опаленням, кондиціонуванням, безпекою, системою
+                                        контролю доступу
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide particularity-list__item">
+                            <div class="particularity-list__icon">
+                                <img src="assets/img/svg/efficiency-icon.svg" alt="">
+                            </div>
+                            <div class="particularity-list__content">
+                                <h3 class="particularity-list__title">Ефективність</h3>
+                                <div class="particularity-list__text">
+                                    <p>Сучасні технології опалення на теплових насосах + SMART системи управління =
+                                        енергоефективність та ощадність
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+            <div class="desc-table">
+                <div class="container">
+                    <div class="desc-table__content">
+                        <div class="desc-table__col">
+                            <div class="desc-table__row">
+                                <div class="desc-table__cell desc-table__label">Ціна</div>
+                                <div class="desc-table__cell">
+                                    <div class="text_desktop"> від 24 100 грн/м<sup>2</sup></div>
+                                    <div class="text_mob">
+                                        <div class="text_label">24 100</div>
+                                        <span>від <br> грн/м<sup>2</sup></span></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="desc-table__col">
+                            <div class="desc-table__row">
+                                <div class="desc-table__cell desc-table__label ">Етап будівництва:</div>
+                                <div class="desc-table__cell">
+                                    <div class="text_desktop">I КВАРТАЛ 2022</div>
+                                    <div class="text_mob">
+                                        <div class="text_label">I КВАРТАЛ</div>
+                                        2022
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="desc-table__col">
+                            <div class="desc-table__row">
+                                <div class="desc-table__cell desc-table__label">Площа</div>
+                                <div class="desc-table__cell">
+                                    <div class="text_desktop">від 68 до 777 м<sup>2</sup></div>
+                                    <div class="text_mob">
+                                        <div class="text_label">68 - 777</div>
+                                        <span> м<sup>2</sup></span></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="desc-table__col">
+                            <div class="desc-table__row">
+                                <div class="desc-table__cell desc-table__label">Адреса</div>
+                                <div class="desc-table__cell">
+                                    <div class="text_desktop">м. Львів, вул. Стрийська 266</div>
+                                    <div class="text_mob">
+                                        <div class="text_label">Стрийська 266</div>
+                                        м. Львів
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="desc-table__column-download">
+                        <a class="download-link" download href="#">
+                            <svg width="48" height="51" viewBox="0 0 48 51" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M47.7262 13.8016L34.7489 0.300621C34.5641 0.108574 34.3092 0 34.043 0H14.7012C12.5366 0 10.7755 1.76249 10.7755 3.92879V17.6539H2.93704C1.31754 17.6539 0 18.9726 0 20.5936V35.3103C-9.94897e-08 36.9313 1.31754 38.25 2.93704 38.25H10.7755V47.0781C10.7755 49.2406 12.5366 51 14.7012 51H44.0743C46.2389 51 48 49.2416 48 47.0803V14.4817C48 14.2281 47.9018 13.9844 47.7262 13.8016ZM34.2857 2.64772L44.939 13.7308H34.2857V2.64772ZM2.93704 36.2885C2.3978 36.2885 1.95925 35.8497 1.95925 35.3103V20.5936C1.95925 20.0543 2.3979 19.6154 2.93704 19.6154H29.3896C29.9288 19.6154 30.3673 20.0543 30.3673 20.5936V35.3103C30.3673 35.8497 29.9287 36.2885 29.3896 36.2885H2.93704ZM46.0407 47.0803C46.0407 48.16 45.1586 49.0385 44.0742 49.0385H14.7012C13.6169 49.0385 12.7347 48.1591 12.7347 47.0782V38.25H29.3896C31.009 38.25 32.3266 36.9313 32.3266 35.3103V20.5936C32.3266 18.9726 31.009 17.6539 29.3896 17.6539H12.7347V3.92879C12.7347 2.84395 13.6169 1.96151 14.7012 1.96151H32.3265V14.7115C32.3265 15.2532 32.7651 15.6923 33.3061 15.6923H46.0407V47.0803Z"
+                                      fill="#ffffff"/>
+                                <path d="M11.7111 24.8917C11.3859 24.4684 10.9822 24.1935 10.5 24.0671C10.1862 23.9828 9.5128 23.9407 8.4796 23.9407H5.75319V32.3653H7.45217V29.1874H8.55999C9.32915 29.1874 9.91654 29.1472 10.3222 29.0667C10.6206 29.0015 10.9143 28.8684 11.2032 28.6672C11.4922 28.4661 11.7303 28.1893 11.9179 27.8369C12.1054 27.4845 12.1991 27.0496 12.1991 26.5324C12.199 25.8619 12.0364 25.3151 11.7111 24.8917ZM10.2561 27.2105C10.1279 27.3983 9.95096 27.5362 9.72511 27.6243C9.49927 27.7125 9.05167 27.7565 8.382 27.7565H7.45217V25.3659H8.27296C8.88522 25.3659 9.29273 25.385 9.49549 25.4234C9.77098 25.4732 9.99871 25.5977 10.1785 25.7969C10.3584 25.9961 10.4483 26.249 10.4483 26.5554C10.4484 26.8044 10.3842 27.0228 10.2561 27.2105Z"
+                                      fill="#ffffff"/>
+                                <path d="M20.3667 26.2422C20.1831 25.704 19.9152 25.249 19.5632 24.8774C19.2112 24.5058 18.7882 24.2472 18.2947 24.1015C17.9274 23.9943 17.3935 23.9407 16.6933 23.9407H13.588V32.3653H16.7851C17.4127 32.3653 17.9139 32.306 18.2889 32.1871C18.7902 32.0263 19.1882 31.8021 19.4828 31.5148C19.8731 31.1355 20.1734 30.6394 20.384 30.0264C20.5562 29.5245 20.6422 28.9268 20.6422 28.2334C20.6422 27.4442 20.5504 26.7805 20.3667 26.2422ZM18.7136 29.7018C18.5988 30.0792 18.4506 30.3502 18.2688 30.5149C18.087 30.6796 17.8584 30.7965 17.5829 30.8654C17.3725 30.9191 17.03 30.9459 16.5555 30.9459H15.287V25.3659H16.0504C16.7429 25.3659 17.2079 25.3927 17.4451 25.4464C17.7627 25.5153 18.0249 25.6475 18.2315 25.8429C18.4381 26.0383 18.5988 26.3103 18.7136 26.6589C18.8284 27.0075 18.8858 27.5075 18.8858 28.1588C18.8858 28.8101 18.8284 29.3244 18.7136 29.7018Z"
+                                      fill="#ffffff"/>
+                                <path d="M27.8629 25.3659V23.9407H22.0944V32.3653H23.7934V28.7852H27.3061V27.36H23.7934V25.3659H27.8629Z"
+                                      fill="#ffffff"/>
+                            </svg>
+
+                            <span>Завантажити Каталог</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <section class="section section-gallery section_anim">
+            <div class="container">
+                <header class="section__header">
+                    <span class="section__title-bg heading_anim heading_anim_dark">
+                      <span class="inner__text">Gallery</span>
+                    </span>
+                    <h2 class="section__title">Галерея</h2>
+                </header>
+            </div>
+
+            <div class="swiper-container gallery" id="gallery">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide gallery__slide">
+                        <div class="gallery__inner-link">
+                            <a href="assets/img/stryska111-lb.jpg" data-lightbox="gallery" class="gallery__link">
+                                <img src="assets/img/stryska111.jpg" width="1609" height="690" alt=""
+                                     class="img gallery__img">
+                            </a>
+                            <div class="gallery__slide-content">
+                                <button class="btn btn_main btn_big btn_white btn_white-icon popup-trigger-consultation">
+                                    Консультація
+                                </button>
+                                <button class="btn btn_main btn_big btn_gold">Підібрати Інвестицію</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide gallery__slide">
+                        <div class="gallery__inner-link">
+                            <a href="assets/img/stryska41-lb.jpg" data-lightbox="gallery" class="gallery__link">
+                                <img src="assets/img/stryska41.jpg" width="1609" height="690" alt=""
+                                     class="img gallery__img">
+                            </a>
+                            <div class="gallery__slide-content">
+                                <button class="btn btn_main btn_big btn_white btn_white-icon popup-trigger-consultation">
+                                    Консультація
+                                </button>
+                                <button class="btn btn_main btn_big btn_gold">Підібрати Інвестицію</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide gallery__slide">
+                        <div class="gallery__inner-link">
+                            <a href="assets/img/stryska31-lb.jpg" data-lightbox="gallery" class="gallery__link">
+                                <img src="assets/img/stryska31.jpg" width="1609" height="690" alt=""
+                                     class="img gallery__img">
+                            </a>
+                            <div class="gallery__slide-content">
+                                <button class="btn btn_main btn_big btn_white popup-trigger-consultation">Консультація
+                                </button>
+                                <button class="btn btn_main btn_big btn_gold">Підібрати Інвестицію</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide gallery__slide">
+                        <div class="gallery__inner-link">
+                            <a href="assets/img/stryska21-lb.jpg" data-lightbox="gallery" class="gallery__link">
+                                <img src="assets/img/stryska21.jpg" width="1609" height="690" alt=""
+                                     class="img gallery__img">
+                            </a>
+                            <div class="gallery__slide-content">
+                                <button class="btn btn_main btn_big btn_white popup-trigger-consultation">Консультація
+                                </button>
+                                <button class="btn btn_main btn_big btn_gold">Підібрати Інвестицію</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+
+        <section class="section section-map section_anim section-map_mob">
+            <div class="container">
+                <div class="section-map__top-content  d-flex">
+                    <header class="section__header">
+                    <span class="section__title-bg heading_anim heading_anim_white">
+                        <span class="inner__text">Location</span>
+                    </span>
+                        <h2 class="section__title">Розташування</h2>
+                    </header>
+                    <div class="sub-title">
+                        Сучасні громадські простори для відпочинку, забезпеченість паркомісцями, smart рішення
+                        управління
+                        зі смартфону, відкриті і доступні інструменти фінансування.
+                    </div>
+                </div>
+            </div>
+            <div class="container d-flex">
+
+                <div class="part_left">
+                    <ul class="section-map__list-location">
+                        <li class="section-map__item"><a href="#">Автовокзал</a></li>
+                        <li class="section-map__item"><a href="#">Парк</a></li>
+                        <li class="section-map__item"><a href="#">Дитячий садок №70 “Мадагаскар”</a></li>
+                        <li class="section-map__item"><a href="#">СЗШ №32,86</a></li>
+                        <li class="section-map__item"><a href="#">Спортивний комплекс «Формула краси»</a></li>
+                        <li class="section-map__item"><a href="#">ТРЦ «King Kros Leopolis» з ресторанами та кафе</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="part_right">
+                    <div id="wrap_maps" class="section-map__wrap-maps"></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="documents" class="section-documents section_anim">
+            <div class="container">
+                <header class="section__header">
+                    <span class="section__title-bg heading_anim heading_anim_dark">
+                        <span class="inner__text">Documents</span>
+                    </span>
+                    <h2 class="section__title">Документи</h2>
+                </header>
+
+                <div class="section__inner">
+                    <div class="section__part_left">
+                        <ul class="radio-list" id="documents-list">
+                            <li class="radio-list__item">
+                                <label class="radio">
+                                    <input type="radio" value="pasport" name="documents" checked/>
+                                    <span class="radio__control"></span>
+                                    <svg class="icon-wrap" width="41" height="40" viewBox="0 0 41 40" fill="none"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M40.6626 4.90139C40.6383 4.87883 35.8223 0.353915 35.8223 0.353915C35.6382 0.179876 35.4478 0 35.0922 0H15.7037C15.1374 0 14.6766 0.453872 14.6766 1.0118V4.11885L7.84312 5.2729C7.29539 5.36757 6.92703 5.88401 7.02192 6.42308L7.36874 8.41529C5.14761 9.15168 2.86722 9.91079 0.665789 10.6899C0.145601 10.8772 -0.127386 11.4471 0.0582353 11.9626L4.43731 23.9557C4.5254 24.197 4.75627 24.3473 5.00251 24.3473C5.06993 24.3473 5.13864 24.336 5.20575 24.3122C5.51789 24.2016 5.67989 23.8626 5.56762 23.5551L1.25332 11.7395C3.32735 11.0079 5.47521 10.2918 7.5743 9.59577L9.638 21.4491L12.0126 35.1001C12.0984 35.582 12.5283 35.9249 13.0136 35.9249C13.0685 35.9249 13.1243 35.9204 13.1802 35.9114L19.6117 34.824L24.6375 33.9752L17.0788 36.6519L11.1182 38.7633L6.489 26.0781C6.37681 25.7706 6.03287 25.611 5.72065 25.7215C5.4085 25.8321 5.24651 26.171 5.3587 26.4785L10.0535 39.3439C10.2037 39.7485 10.5927 40 11.0039 40C11.1175 40 11.2329 39.9808 11.3453 39.9403L17.485 37.7655L31.4262 32.8288L34.0895 32.3791H39.9729C40.5392 32.3791 41 31.9242 41 31.365V5.56812C41.0001 5.21397 40.805 5.03331 40.6626 4.9014V4.90139ZM39.0714 5.04151H36.0661L35.9916 5.04182C35.8477 5.04277 35.5108 5.04522 35.4254 4.96159C35.4057 4.94226 35.3826 4.87773 35.3826 4.75789L35.3756 1.56942L39.0714 5.04151ZM39.7989 31.1955H15.8778V19.664C15.8778 19.3372 15.6089 19.0723 15.2772 19.0723C14.9455 19.0723 14.6766 19.3372 14.6766 19.664V31.3648C14.6766 31.9239 15.1374 32.3789 15.7037 32.3789H26.9797L19.4087 33.6575L13.164 34.7133L10.8219 21.249L8.23783 6.40683L14.6765 5.31945V16.9185C14.6765 17.2452 14.9454 17.5102 15.2771 17.5102C15.6088 17.5102 15.8777 17.2452 15.8777 16.9185V1.18332H34.1736L34.1814 4.75923C34.1814 5.19266 34.3152 5.54327 34.5791 5.8014C34.9845 6.198 35.5576 6.22561 35.9134 6.22561C35.944 6.22561 35.973 6.22538 36.0002 6.22522L39.7989 6.22498V31.1955Z"
+                                              fill="#403E3D"/>
+                                    </svg>
+                                    <span class="radio__label">Паспорт об’єкта</span>
+                                </label>
+                            </li>
+
+                            <li class="radio-list__item">
+                                <label class="radio">
+                                    <input type="radio" value="land-docs" name="documents"/>
+                                    <span class="radio__control"></span>
+
+                                    <svg class="icon-wrap" width="41" height="40" viewBox="0 0 41 40" fill="none"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M40.6626 4.90139C40.6383 4.87883 35.8223 0.353915 35.8223 0.353915C35.6382 0.179876 35.4478 0 35.0922 0H15.7037C15.1374 0 14.6766 0.453872 14.6766 1.0118V4.11885L7.84312 5.2729C7.29539 5.36757 6.92703 5.88401 7.02192 6.42308L7.36874 8.41529C5.14761 9.15168 2.86722 9.91079 0.665789 10.6899C0.145601 10.8772 -0.127386 11.4471 0.0582353 11.9626L4.43731 23.9557C4.5254 24.197 4.75627 24.3473 5.00251 24.3473C5.06993 24.3473 5.13864 24.336 5.20575 24.3122C5.51789 24.2016 5.67989 23.8626 5.56762 23.5551L1.25332 11.7395C3.32735 11.0079 5.47521 10.2918 7.5743 9.59577L9.638 21.4491L12.0126 35.1001C12.0984 35.582 12.5283 35.9249 13.0136 35.9249C13.0685 35.9249 13.1243 35.9204 13.1802 35.9114L19.6117 34.824L24.6375 33.9752L17.0788 36.6519L11.1182 38.7633L6.489 26.0781C6.37681 25.7706 6.03287 25.611 5.72065 25.7215C5.4085 25.8321 5.24651 26.171 5.3587 26.4785L10.0535 39.3439C10.2037 39.7485 10.5927 40 11.0039 40C11.1175 40 11.2329 39.9808 11.3453 39.9403L17.485 37.7655L31.4262 32.8288L34.0895 32.3791H39.9729C40.5392 32.3791 41 31.9242 41 31.365V5.56812C41.0001 5.21397 40.805 5.03331 40.6626 4.9014V4.90139ZM39.0714 5.04151H36.0661L35.9916 5.04182C35.8477 5.04277 35.5108 5.04522 35.4254 4.96159C35.4057 4.94226 35.3826 4.87773 35.3826 4.75789L35.3756 1.56942L39.0714 5.04151ZM39.7989 31.1955H15.8778V19.664C15.8778 19.3372 15.6089 19.0723 15.2772 19.0723C14.9455 19.0723 14.6766 19.3372 14.6766 19.664V31.3648C14.6766 31.9239 15.1374 32.3789 15.7037 32.3789H26.9797L19.4087 33.6575L13.164 34.7133L10.8219 21.249L8.23783 6.40683L14.6765 5.31945V16.9185C14.6765 17.2452 14.9454 17.5102 15.2771 17.5102C15.6088 17.5102 15.8777 17.2452 15.8777 16.9185V1.18332H34.1736L34.1814 4.75923C34.1814 5.19266 34.3152 5.54327 34.5791 5.8014C34.9845 6.198 35.5576 6.22561 35.9134 6.22561C35.944 6.22561 35.973 6.22538 36.0002 6.22522L39.7989 6.22498V31.1955Z"
+                                              fill="#403E3D"/>
+                                    </svg>
+
+                                    <span class="radio__label">Документи на земельну ділянку</span>
+                                </label>
+                            </li>
+
+                            <li class="radio-list__item">
+                                <label class="radio">
+                                    <input type="radio" value="building-docs" name="documents"/>
+                                    <span class="radio__control"></span>
+                                    <svg class="icon-wrap" width="41" height="40" viewBox="0 0 41 40" fill="none"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M40.6626 4.90139C40.6383 4.87883 35.8223 0.353915 35.8223 0.353915C35.6382 0.179876 35.4478 0 35.0922 0H15.7037C15.1374 0 14.6766 0.453872 14.6766 1.0118V4.11885L7.84312 5.2729C7.29539 5.36757 6.92703 5.88401 7.02192 6.42308L7.36874 8.41529C5.14761 9.15168 2.86722 9.91079 0.665789 10.6899C0.145601 10.8772 -0.127386 11.4471 0.0582353 11.9626L4.43731 23.9557C4.5254 24.197 4.75627 24.3473 5.00251 24.3473C5.06993 24.3473 5.13864 24.336 5.20575 24.3122C5.51789 24.2016 5.67989 23.8626 5.56762 23.5551L1.25332 11.7395C3.32735 11.0079 5.47521 10.2918 7.5743 9.59577L9.638 21.4491L12.0126 35.1001C12.0984 35.582 12.5283 35.9249 13.0136 35.9249C13.0685 35.9249 13.1243 35.9204 13.1802 35.9114L19.6117 34.824L24.6375 33.9752L17.0788 36.6519L11.1182 38.7633L6.489 26.0781C6.37681 25.7706 6.03287 25.611 5.72065 25.7215C5.4085 25.8321 5.24651 26.171 5.3587 26.4785L10.0535 39.3439C10.2037 39.7485 10.5927 40 11.0039 40C11.1175 40 11.2329 39.9808 11.3453 39.9403L17.485 37.7655L31.4262 32.8288L34.0895 32.3791H39.9729C40.5392 32.3791 41 31.9242 41 31.365V5.56812C41.0001 5.21397 40.805 5.03331 40.6626 4.9014V4.90139ZM39.0714 5.04151H36.0661L35.9916 5.04182C35.8477 5.04277 35.5108 5.04522 35.4254 4.96159C35.4057 4.94226 35.3826 4.87773 35.3826 4.75789L35.3756 1.56942L39.0714 5.04151ZM39.7989 31.1955H15.8778V19.664C15.8778 19.3372 15.6089 19.0723 15.2772 19.0723C14.9455 19.0723 14.6766 19.3372 14.6766 19.664V31.3648C14.6766 31.9239 15.1374 32.3789 15.7037 32.3789H26.9797L19.4087 33.6575L13.164 34.7133L10.8219 21.249L8.23783 6.40683L14.6765 5.31945V16.9185C14.6765 17.2452 14.9454 17.5102 15.2771 17.5102C15.6088 17.5102 15.8777 17.2452 15.8777 16.9185V1.18332H34.1736L34.1814 4.75923C34.1814 5.19266 34.3152 5.54327 34.5791 5.8014C34.9845 6.198 35.5576 6.22561 35.9134 6.22561C35.944 6.22561 35.973 6.22538 36.0002 6.22522L39.7989 6.22498V31.1955Z"
+                                              fill="#403E3D"/>
+                                    </svg>
+                                    <span class="radio__label">Документи на будівництво</span>
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="section__part_right">
+                        <ul class="documents-list active" id="pasport">
+                            <li class="documents-list__item">
+                                <div class="documents-list__desc">
+                                    <h3 class="documents-list__title">Право на виконання будівельних робіт:</h3>
+                                    <p>Дозвіл на виконання будівельних робіт серії
+                                        ЛВ № 012201002117 від жовтня 2020 року </p>
+                                </div>
+
+                                <div class="documents-list__btns">
+                                    <a class="btn btn_gold btn_sm" download href="#">Дивитись документ</a>
+                                </div>
+                            </li>
+                            <li class="documents-list__item">
+                                <div class="documents-list__desc">
+                                    <h3 class="documents-list__title">Містобудівні умови та обмеження:</h3>
+                                    <p>Рішення ЛМР №244 від 13.03.2020</p>
+                                </div>
+
+                                <div class="documents-list__btns">
+                                    <a class="btn btn_gold btn_sm" download href="#">Дивитись документ</a>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul class="documents-list" id="land-docs">
+                            <li class="documents-list__item">
+                                <div class="documents-list__desc">
+                                    <h3 class="documents-list__title">Витяг з Державного реєстру речових
+                                        прав на нерухоме майно про реєстрацію права власності</h3>
+                                    <p>Індекс номеру витягу: 181532880</p>
+                                </div>
+
+                                <div class="documents-list__btns">
+                                    <a class="btn btn_gold btn_sm" download href="#">Дивитись документ</a>
+                                </div>
+                            </li>
+                            <li class="documents-list__item">
+                                <div class="documents-list__desc">
+                                    <h3 class="documents-list__title">Організація дорожнього руху</h3>
+                                    <p>Дозвіл на виконання будівельних робіт серії
+                                        ЛВ № 012201002117 від жовтня 2020 року </p>
+                                </div>
+
+                                <div class="documents-list__btns">
+                                    <a class="btn btn_gold btn_sm" download href="#">Дивитись документ</a>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul class="documents-list" id="building-docs">
+                            <li class="documents-list__item">
+                                <div class="documents-list__desc">
+                                    <h3 class="documents-list__title">Містобудівні умови та обмеження:</h3>
+                                    <p>Рішення ЛМР №244 від 13.03.2020</p>
+                                </div>
+
+                                <div class="documents-list__btns">
+                                    <a class="btn btn_gold btn_sm" download href="#">Дивитись документ</a>
+                                </div>
+                            </li>
+                            <li class="documents-list__item">
+                                <div class="documents-list__desc">
+                                    <h3 class="documents-list__title">Містобудівні умови та обмеження:</h3>
+                                    <p>Рішення ЛМР №244 від 13.03.2020</p>
+                                </div>
+
+                                <div class="documents-list__btns">
+                                    <a class="btn btn_gold btn_sm" download href="#">Дивитись документ</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="section section-building section_anim">
+            <div class="container">
+                <header class="section__header">
+                    <span class="section__title-bg heading_anim heading_anim_dark">
+                        <span class="inner__text">Building</span>
+                    </span>
+                    <h2 class="section__title">Будівництво</h2>
+                </header>
+            </div>
+            <div class="swiper-container gallery gallery_small" id="building">
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide gallery__slide">
+                        <div class="gallery__inner-link">
+                            <a href="assets/img/build1-lb.jpg" data-lightbox="gallery" class="gallery__link">
+                                <img src="assets/img/build1.jpg" alt="" class="img gallery__img">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide gallery__slide">
+                        <div class="gallery__inner-link">
+                            <a href="assets/img/slide2.jpg" data-lightbox="gallery" class="gallery__link">
+                                <img src="assets/img/slide2.jpg" alt="" class="img gallery__img">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide gallery__slide">
+                        <div class="gallery__inner-link">
+                            <a href="assets/img/build2-lb.jpg" data-lightbox="gallery" class="gallery__link">
+                                <img src="assets/img/build2.jpg" alt="" class="img gallery__img">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide gallery__slide">
+                        <div class="gallery__inner-link">
+                            <a href="assets/img/build3-lb.jpg" data-lightbox="gallery" class="gallery__link">
+                                <img src="assets/img/build3.jpg" alt="" class="img gallery__img">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__logo-wrap">
+            <a href="#" class="footer__logo">
+                <img src="assets/img/svg/logo-site.svg" alt="" class="img">
+            </a>
+        </div>
+        <div id="contacts" class="footer__contacts">
+            <div class="footer__contacts-item">
+                <div class="wrap-item address">
+                    <h5 class="title">Відділи продажу </h5>
+                    <span>м.Львів, вул. Федьковича, 34б</span>
+                </div>
+                <div class="wrap-item tel mob-order">
+                    <a href="tel: +38 (067) 77 90 707" class="tel-text text_md"> +38 (067) 77 90 707</a>
+                    <a class="email" href="mailto: sales@smartestate.eu"> sales@smartestate.eu</a>
+                </div>
+                <div class="wrap-item work">
+                    <h5 class="title">Графік роботи</h5>
+                    <div>
+                        <div class="work-row"> Пн - Пт: 10:00-18:00<br> Сб - Нд: Вихідний</div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__contacts-item">
+                <div class="wrap-item address">
+                    <h5 class="title">Офіс / Відділ постачання</h5>
+                    <span>м.Львів, вул. Федьковича, 34б</span>
+                </div>
+                <div class="wrap-item tel mob-order">
+                    <a href="tel: +38 (067) 63 81 115" class="tel-text text_md"> +38 (067) 63 81 115</a>
+                    <a class="email" href="mailto: office@smartestate.eu">office@smartestate.eu</a>
+                </div>
+                <div class="wrap-item work">
+                    <h5 class="title">Графік роботи</h5>
+                    <div>
+                        <div class="work-row"> Пн - Пт: 10:00-18:00<br> Сб - Нд: Вихідний</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer__item social-bar">
+            <a href="#" class="social__link"><span class="hide">Instagram</span>
+                <img class="icon" src="assets/img/svg/insta.svg" alt="">
+            </a>
+            <a href="#" class="social__link"><span class="hide">Youtube</span>
+                <img class="icon" src="assets/img/svg/youtybe.svg" alt="">
+            </a>
+
+            <a href="#" class="social__link"><span class="hide">Facebook</span>
+                <img class="icon" src="assets/img/svg/fb.svg" alt="">
+            </a>
+        </div>
+    </footer>
+</div>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="dist/main.js"></script>
+<script src="dist/main2.js"></script>
+
+
+<div class="modal" tabindex="-1" id="popupConsultation">
+    <div class="modal__dialog">
+        <div class="modal__content">
+            <div class="modal__header">
+                <button type="button" id="closePopup" class="btn btn_close" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+            </div>
+            <div class="modal__body">
+                <form action="#" class="form">
+                    <div class="form__group">
+                        <label class="label hide">Ім’я</label>
+                        <input type="text" class="input" placeholder="Ім’я">
+                    </div>
+                    <div class="form__group">
+                        <label class="label hide">Телефон</label>
+                        <input type="text" class="input" placeholder="Телефон">
+                    </div>
+                    <div class="form__group">
+                        <label class="label hide">Коментар</label>
+                        <textarea class="textarea" rows="1" cols="25" name="text" placeholder="Коментар"></textarea>
+                    </div>
+                    <div class="form__footer">
+                        <button type="submit" class="btn btn_main btn_gold btn_submit">Надіслати</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
