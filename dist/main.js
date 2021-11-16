@@ -37310,7 +37310,7 @@ $(document).ready(function () {
         rendererSettings: {
             preserveAspectRatio: 'xMidYMid slice'
         },
-        path: 'assets/animation/map_black.json'
+        path: 'assets/animation/map_ic_.json'
     });
 
     document.addEventListener('scroll', function () {

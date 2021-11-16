@@ -1,3 +1,25 @@
+.ic_school_1_active,
+.ic_school_2_active,
+.ic_park_active,
+.ic_gym_active,
+.ic_bus_station_active,
+.ic_shop_active{
+  filter: drop-shadow(0 0 0.75rem rgb(252,194,29));
+  opacity: 0;
+  display: block;
+}
+
+.ic_school_1:hover,
+.ic_school_2:hover,
+.ic_park:hover,
+.ic_gym:hover,
+.ic_bus_station:hover,
+.ic_shop_active:hover{
+  opacity: 1;
+  transition: .15s;
+}
+
+
 .menu .sub-menu {
   font-size: 19px;
   font-weight: 600;
