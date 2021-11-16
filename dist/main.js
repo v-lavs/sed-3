@@ -37310,7 +37310,7 @@ $(document).ready(function () {
         rendererSettings: {
             preserveAspectRatio: 'xMidYMid slice'
         },
-        path: 'assets/animation/map_ic_.json'
+        path: 'assets/animation/map_ic_final.json'
     });
 
     document.addEventListener('scroll', function () {
@@ -37364,6 +37364,7 @@ $(document).ready(function () {
         autoplay: false,
         path: 'assets/animation/animation_icon_car.json'
     });
+
 
     onHoverPlay(iconContainer1, animationIcon1);
     onHoverPlay(iconContainer2, animationIcon2);

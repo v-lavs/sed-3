@@ -1,28 +1,31 @@
-.ic_school_1_active,
-.ic_school_2_active,
-.ic_park_active,
-.ic_gym_active,
-.ic_bus_station_active{
+.map__icon{
   filter: drop-shadow(0 0 0.75rem rgb(252,194,29));
   opacity: 0;
-  display: block;
-}
-.ic_shop_active{
-  filter: drop-shadow(0 0 0.75rem rgb(252,194,29));
-  opacity: 0;
-  display: block;
 }
 
-.ic_school_1_active:hover,
-.ic_school_2_active:hover,
-.ic_park_active:hover,
-.ic_gym_active:hover,
-.ic_bus_station_active:hover,
-.ic_shop_active:hover{
+.map__icon:hover{
+  cursor: pointer;
   opacity: 1;
   transition: .15s;
 }
 
+.map__icon.active {
+  opacity: 1;
+  transition: .15s;
+}
+
+.section-map__list-location {
+  background-color: transparent;
+}
+
+.section-map__item{
+  background-color: #fcc214;
+  border: none;
+}
+
+.section-map__item.faded {
+  opacity: .5;
+}
 
 .menu .sub-menu {
   font-size: 19px;
